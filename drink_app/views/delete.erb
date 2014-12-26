@@ -1,0 +1,11 @@
+<% if @drinks %> 
+<p> Are you sure you want to delete the following order: <em> "<%= @drinks.d_order %>" </em></p>
+<form action= "/<%= @drinks.id %>" method="post">
+ <input type="hidden" name= "_method" value="delete"> 
+ <input type="submit" value="Yes, delete it!">
+ <a href ="/<%=@drinks.id %>"> <input type="submit" value="Cancel"></a> 
+ </form> 
+
+ <%else%>
+ <p> Note not found. </p>
+ <% end%> 

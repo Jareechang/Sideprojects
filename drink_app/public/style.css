@@ -1,0 +1,43 @@
+html {
+
+font-family:Arial;
+
+}
+
+body header hgroup h1 a{
+
+text-decoration: none;
+
+
+color: rgba(1, 38, 68, 0.68);
+
+}
+
+#main > #add textarea {
+
+background-color: rgba(42, 123, 120, 0.09);
+
+border:  2px solid black;
+
+}
+
+#main > #drinks {
+
+background-color: rgba(181, 13, 13, 0.05);
+
+
+width: 70%;
+
+}
+
+#main > #drinks article p {
+
+	display: inline-block;
+
+}
+
+
+#main > #drinks  article p:nth-child(3){
+
+	padding-left: 10%;
+}
