@@ -6,24 +6,61 @@
 </form>
 </section>
 
+<!-- blur other elements when focus on textarea-->
+
+ <script> 
+
+ var blurring= function() {
+
+$('#main > #drinks').css("-webkit-filter", "blur(3px)");
+
+ }
+
+$(document).ready(function() {    
+
+  $(document.body).on('focus','#main > #add textarea', blurring);
+
+  $('#main > #add textarea').blur(function () {
+
+$(this).off('focus')
+  } )
+
+ 
+});
+
+ </script> 
 
 <!-- displaying the drinks onto the webpage --> 
-<% @drinks.each do |item| %>
+
 <div id ="drinks">
-  <article <%= 'class="complete"' if item.complete %>>
-    <p class="items">
-      <p > <strong>Name:</strong> <%= item.name %></p>
-      <p ><strong>Drink: </strong><%= item.d_order %> </p>
-      
-      <span><a href="/<%= item.id %>">[edit]</a></span>
-    </p>
-    <p class="links">
-      <a href="/<%= item.id %>/complete">&#8623;</a>
-    </p>
-    <p class="meta" style="padding-left:20%"><strong>Ordered: </strong><%= item.ordered_at.strftime("%I:%M%p") %></p>
+  <article>
+  <table>
+   <thead>
+     <tr>
+     <th> Name </th>
+      <th> Drink </th>
+      <th> Ordered at </th>
+      <th> </th>
+      <th></th>
+      </tr> 
+      </thead>
+      <% @drinks.each do |item| %>
+    <tbody>
+    <tr class="items">
+      <td > <%= item.name %></td>
+      <td><%= item.d_order %> </td>
+      <td> <%= item.ordered_at.strftime("%I:%M%p") %> </td>
+      <td> <a href="/<%= item.id %>">edit</a> </td>
+       <td><a href="/<%= item.id %>/complete">&#8623;</a></td>
+      </tr>
+      </tbody>
+   
+    <% end %>
+
+    </table>
   </article>
   </div>
-<% end %>
+
 
 
 

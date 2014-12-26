@@ -1,25 +1,34 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
   <meta charset="utf8">
   <title><% ' | Application' %></title>
 
  <link href="/style.css" rel="stylesheet">
 </head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <body>
+
   <header>
     <hgroup>
       <h1><a href="/"> Coffee Run</a></h1>
-      <h3>Got to make a coffee/drink run? Let me help :)</h3>
+      <h3>A simple list for your drinks</h3>
     </hgroup>
   </header>
  
   <div id="main">
     <%= yield %>
-  </div>
+
  
-  <footer>
-    <p><small>An app for <a href="http://www.google.com">CoffeeAddicts!</a>.</small></p>
-  </footer>
+
+  <div>
 </body>
+
+
+<footer>
+    <p><small>An app for <a href="http://www.google.com">CoffeeAddicts</a></small></p>
+  </footer>
 </html>

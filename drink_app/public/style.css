@@ -2,42 +2,171 @@ html {
 
 font-family:Arial;
 
+
+
+
 }
 
+body  {
+
+background: url("https://unsplash.imgix.net/44/E5KMvPp9SsCnqmEGUwAS_2014-08-10%2012.56.40%201.jpg?dpr=2&fit=crop&fm=jpg&q=75&w=950");
+background-size:100%;
+
+
+
+}
 body header hgroup h1 a{
 
 text-decoration: none;
-
 
 color: rgba(1, 38, 68, 0.68);
 
 }
 
+body header hgroup h3{
+text-align:center;
+
+}
+
+body header hgroup h1{
+text-align:center;
+
+}
 #main > #add textarea {
 
-background-color: rgba(42, 123, 120, 0.09);
+background-color: rgba(42, 123, 120, 0.29);
 
-border:  2px solid black;
+border: 2px solid rgba(3, 68, 63, 0.56);
+width: 30%;
+height:20px;
+resize:none;
+
+
+
+}
+
+#main > #add form {
+
+padding-left:20%;
+
+
+}
+
+#main > #add input {
+
+height: 20px;
+width: 15%;
+
 
 }
 
 #main > #drinks {
+	
+position: relative;
+top:15px;
 
-background-color: rgba(181, 13, 13, 0.05);
+background-color: rgba(255, 24, 24, 0.19);
+margin-left:auto;
+margin-right:auto;
 
-
-width: 70%;
-
-}
-
-#main > #drinks article p {
-
-	display: inline-block;
+width: 67%;
 
 }
 
 
-#main > #drinks  article p:nth-child(3){
 
-	padding-left: 10%;
+#main > #drinks article table tbody .items td{
+
+width:10%;
+text-align: center;
+color:#EAF2E4;
+
+
+
 }
+#main > #drinks article table tbody .items a{
+
+color:#EAF2E4;
+text-decoration:none;
+
+
+
+}
+
+
+#main > #drinks article table thead tr th{
+
+width:400px;
+border-collapse: collapse;
+border-bottom: 1px solid black;
+color:white;
+
+
+
+}
+
+#main > #drinks article table {
+
+border-spacing:0;
+
+
+}
+
+
+footer p {
+
+text-align:center;
+ 
+
+position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+
+background-color: rgba(22, 22, 31, 0.29);
+
+color: white;
+
+}
+footer p a {
+	color:white;
+	text-decoration:none;
+}
+
+
+#main > #edit{
+
+}
+
+#main > #edit form textarea{
+
+background-color: rgba(42, 123, 120, 0.29);
+
+border: 2px solid rgba(3, 68, 63, 0.56);
+width: 150px;
+height:20px;
+resize:none;
+color:white;
+}
+
+#main > #edit form{
+
+width:240px;
+display:inline-block;
+
+}
+#main > #edit {
+
+	margin-left:40%;
+}
+
+
+::-webkit-input-placeholder {
+
+	color:white;
+}
+
+
+
+

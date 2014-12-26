@@ -1,11 +1,28 @@
 <% if @drinks %>
+<div id="edit">
   <form action="/<%= @drinks.id %>" method="post" id="edit">
     <input type="hidden" name="_method" value="put">
     <textarea name="edited_order"> <%=@drinks.d_order %></textarea>
     <input type="checkbox" name="complete" <%= "checked" if @drinks.complete %>>
     <input type="submit">
   </form>
-  <p><a href="/<%= @drinks.id %>/delete">Delete</a></p>
+
+  <a href="/<%= @drinks.id %>/delete"><button>Delete</button></a>
+ <script> 
+
+	$(document).ready(function() {
+		$('#main > #edit form textarea').focus(function(){
+
+			$(this).css('color', 'black');
+			
+
+		});
+
+	});
+
+
+ </script> 
+  </div>
 <% else %>
   <p>Note not found.</p>
 <% end %>
