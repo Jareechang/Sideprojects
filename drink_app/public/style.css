@@ -167,6 +167,42 @@ display:inline-block;
 	color:white;
 }
 
+#main > #delete {
+position: relative;
+top:15px;
+
+background-color: rgba(255, 24, 24, 0.19);
+margin-left:auto;
+margin-right:auto;
+
+width: 50%;
+
+
+}
+
+#main > #delete form {
+
+margin-left: 35%;
+
+}
+
+
+#main > #delete p{
+
+color:#EAF2E4;
+text-align:center;
+
+}
+
+
+#main > #delete > #del_page_drink {
+
+margin-left:30%;
+background-color: rgba(42, 123, 120, 0.29);
+width:200px;
+text-align:center;
+}
+
 
 
 
