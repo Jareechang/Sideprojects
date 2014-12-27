@@ -1,6 +1,6 @@
 <% if @drinks %> 
 <div id ="delete">
-<p> Are you sure you want to delete the following order: <em> "<%= @drinks.d_order %>" </em></p>
+<p> Are you sure you want to delete the following order: <em> <div id="del_page_drink"> "<%= @drinks.d_order %>" </div></em></p>
 <form action= "/<%= @drinks.id %>" method="post">
  <input type="hidden" name= "_method" value="delete"> 
  <input type="submit" value="Yes, delete it!">
